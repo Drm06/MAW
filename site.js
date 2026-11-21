@@ -47,13 +47,10 @@ for (const project of portfolio.projects) {
     gallery.append(item);
 }
 
-function showAbout() {
-    showPanel(aboutPanel, '关于我', portfolio.about);
-}
-
 setBubble(character, '关于我');
-character.addEventListener('click', showAbout);
-document.getElementById('about').addEventListener('click', showAbout);
+character.addEventListener('click', () => {
+    showPanel(aboutPanel, '关于我', portfolio.about);
+});
 document.getElementById('showreel').addEventListener('click', () => {
     showPanel(projectPanel, '作品集锦', portfolio.showreel);
 });
