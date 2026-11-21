@@ -14,14 +14,27 @@ function showPanel(panel, title, content) {
 }
 
 function setBubble(trigger, text) {
-    trigger.addEventListener('pointerenter', (event) => {
-        if (event.pointerType === 'touch' || document.querySelector('dialog[open]')) {
+    const show = () => {
+        if (projectPanel.open || aboutPanel.open) {
             return;
         }
         bubble.textContent = text;
         bubbleContainer.classList.add('is-visible');
+    };
+    const hide = () => bubbleContainer.classList.remove('is-visible');
+
+    trigger.addEventListener('pointerenter', (event) => {
+        if (event.pointerType !== 'touch') {
+            show();
+        }
     });
-    trigger.addEventListener('pointerleave', () => bubbleContainer.classList.remove('is-visible'));
+    trigger.addEventListener('pointerleave', hide);
+    trigger.addEventListener('focus', () => {
+        if (trigger.matches(':focus-visible')) {
+            show();
+        }
+    });
+    trigger.addEventListener('blur', hide);
 }
 
 for (const project of portfolio.projects) {
@@ -30,20 +43,17 @@ for (const project of portfolio.projects) {
     item.className = 'item';
     item.id = project.id;
     item.setAttribute('aria-haspopup', 'dialog');
+    item.setAttribute('aria-label', project.title);
+    item.setAttribute('aria-description', project.gameplay);
 
     const cover = document.createElement('img');
     cover.src = `assets/${project.cover}`;
     cover.alt = '';
     cover.decoding = 'async';
 
-    const title = document.createElement('span');
-    title.className = 'item-title';
-    title.lang = 'en';
-    title.textContent = project.title;
-
-    item.append(cover, title);
+    item.append(cover);
     item.addEventListener('click', () => showPanel(projectPanel, project.title, project.content));
-    setBubble(item, project.title);
+    setBubble(item, project.gameplay);
     gallery.append(item);
 }
 

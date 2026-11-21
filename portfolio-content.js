@@ -4,6 +4,7 @@ const portfolio = {
             id: "blocks-world",
             title: "Blocks World",
             cover: "project1.png",
+            gameplay: "碰一下箭头，让落下的方块帮你铺路。",
             content: `<div class="video-frame"><iframe src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=113561368004812&amp;bvid=BV1EfzaYcEhy&amp;cid=27081314229&amp;p=1&amp;autoplay=0" title="Blocks World 游戏视频" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>
 <p class="video-link"><a href="https://www.bilibili.com/video/BV1EfzaYcEhy/" target="_blank" rel="noopener">在哔哩哔哩观看</a></p>
 <p><a class="play-link" href="https://drm06.itch.io/blocks-world" target="_blank" rel="noopener">试玩 Blocks World</a></p>
@@ -35,6 +36,7 @@ const portfolio = {
             id: "trick-or-treat",
             title: "Trick or Treat",
             cover: "project2.png",
+            gameplay: "两个人抢糖果，翻宝箱、猜拳，还能给对手设陷阱。",
             content: `<div class="video-frame"><iframe src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=113561384780140&amp;bvid=BV17AzYYtEKL&amp;cid=27081378581&amp;p=1&amp;autoplay=0" title="Trick or Treat 游戏视频" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>
 <p class="video-link"><a href="https://www.bilibili.com/video/BV17AzYYtEKL/" target="_blank" rel="noopener">在哔哩哔哩观看</a></p>
 <p><a class="play-link" href="https://drm06.itch.io/trick-or-treat" target="_blank" rel="noopener">试玩 Trick or Treat</a></p>
@@ -65,6 +67,7 @@ const portfolio = {
             id: "message",
             title: "Message",
             cover: "project3.png",
+            gameplay: "键入对话推进剧情，体会文字怎样伤人。",
             content: `<div class="video-frame"><iframe src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=113561384782010&amp;bvid=BV1jAzYYtEWA&amp;cid=27081442084&amp;p=1&amp;autoplay=0" title="Message 游戏视频" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>
 <p class="video-link"><a href="https://www.bilibili.com/video/BV1jAzYYtEWA/" target="_blank" rel="noopener">在哔哩哔哩观看</a></p>
 <p><a class="play-link" href="https://drm06.itch.io/message" target="_blank" rel="noopener">试玩 Message</a></p>
@@ -92,6 +95,7 @@ const portfolio = {
             id: "cheeses-comic-odyssey",
             title: "Cheese’s Comic Odyssey",
             cover: "project4.png",
+            gameplay: "拖动漫画格，挪出一条能跳过去的路。",
             content: `<div class="video-frame"><iframe src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=113561401624685&amp;bvid=BV1qczYYfEqK&amp;cid=27081443408&amp;p=1&amp;autoplay=0" title="Cheese’s Comic Odyssey 游戏视频" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>
 <p class="video-link"><a href="https://www.bilibili.com/video/BV1qczYYfEqK/" target="_blank" rel="noopener">在哔哩哔哩观看</a></p>
 <p><a class="play-link" href="https://drm06.itch.io/cheeses-comic-odyssey" target="_blank" rel="noopener">试玩 Cheese’s Comic Odyssey</a></p>
@@ -132,6 +136,7 @@ const portfolio = {
             id: "inkbound-imagination",
             title: "Inkbound Imagination",
             cover: "project5.png",
+            gameplay: "用触控笔挥出招式，把敌人从画卷上抹掉。",
             content: `<div class="video-frame"><iframe src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=113561401559529&amp;bvid=BV17czYYfEgE&amp;cid=27081507185&amp;p=1&amp;autoplay=0" title="Inkbound Imagination 游戏视频" allow="fullscreen" allowfullscreen loading="lazy"></iframe></div>
 <p class="video-link"><a href="https://www.bilibili.com/video/BV17czYYfEgE/" target="_blank" rel="noopener">在哔哩哔哩观看</a></p>
 <p><a class="play-link" href="https://drm06.itch.io/inkbound-imagination" target="_blank" rel="noopener">试玩 Inkbound Imagination</a></p>
